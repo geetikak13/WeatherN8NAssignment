@@ -60,7 +60,9 @@ The system captures additional data points beyond the standard requirements to p
 * **Pressure**: Atmospheric pressure at sea level.
 
 **Resilience (Bonus)**
+
 To ensure high availability and handle transient network flickers, **Retry Logic** is enabled on the OpenWeatherMap, Supabase, and Email nodes. Each node is configured for **3 retries** with a **1000ms delay** between attempts.
+
 ---
 
 ## 3. How to Import and Run 
