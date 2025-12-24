@@ -45,9 +45,11 @@ Email Configuration
 
 ## 2. Functional Features
 Multi-City Looping (Bonus) 
+
 The workflow utilizes a **Code Node** at the start to define an array of cities. Because n8n processes items individually, the workflow automatically loops through every city in the configuration, ensuring independent logging and alerting for each city.
 
 Alert Logic Rules 
+
 A centralized processing node evaluates the weather data against the following criteria:
 * **Precipitation Alert**: Triggered if the weather condition includes rain, snow, drizzle, storm, or thunder.
 * **Heat Alert**: Triggered if the temperature exceeds  ().
@@ -55,6 +57,7 @@ A centralized processing node evaluates the weather data against the following c
 * **None**: Default state if no thresholds are met.
 
 Advanced Metrics (Bonus) 
+
 The system captures additional data points beyond the standard requirements to provide deeper context:
 * **Feels Like**: Apparent temperature based on humidity and wind.
 * **Pressure**: Atmospheric pressure at sea level.
@@ -66,6 +69,7 @@ To ensure high availability and handle transient network flickers, **Retry Logic
 ---
 
 ## 3. How to Import and Run 
+
 1. **Import**: In n8n, click the **three dots menu** and select **Import from File**. Upload the provided `.json` file.
 2. **Configure Credentials**:
 * Edit the **OpenWeatherMap Node** and select/add your API key credentials.
