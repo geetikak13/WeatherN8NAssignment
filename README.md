@@ -63,7 +63,7 @@ Resilience (Bonus)
 To ensure high availability and handle transient network flickers, **Retry Logic** is enabled on the OpenWeatherMap, Supabase, and Email nodes. Each node is configured for **3 retries** with a **1000ms delay** between attempts.
 ---
 
-3. How to Import and Run 
+## 3. How to Import and Run 
 1. **Import**: In n8n, click the **three dots menu** and select **Import from File**. Upload the provided `.json` file.
 2. **Configure Credentials**:
 * Edit the **OpenWeatherMap Node** and select/add your API key credentials.
@@ -73,7 +73,7 @@ To ensure high availability and handle transient network flickers, **Retry Logic
 4. **Test**: Click **Execute Workflow** to verify that the data flows correctly into the Supabase `weather_logs` table and that an email is delivered to your inbox.
 ---
 
-4. Deliverables Summary 
+## 4. Deliverables Summary 
 * **Workflow JSON**: `weather_automation_final.json` 
 * **README**: This documentation file 
 * **Screenshot**: A visual snapshot of the n8n canvas showing the node connections 
